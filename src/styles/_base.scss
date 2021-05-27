@@ -1,0 +1,259 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: $fRegular;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration-thickness: 3px;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $dark;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  padding: $padS;
+}
+
+.pad-top {
+  padding-top: 85px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.mini-title {
+  font-size: $fsizeS;
+  font-weight: $fSemiBold;
+  margin-bottom: 1rem;
+}
+
+.medium-title {
+  font-size: $fsizeSS;
+  font-weight: $fBold !important;
+  margin-bottom: 1rem;
+
+  &--no-marg {
+    margin: 0;
+  }
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.semi-bold {
+  font-weight: $fSemiBold;
+}
+
+.no-marg-l {
+  margin-left: 0 !important;
+}
+
+.space {
+  &__marg {
+    &--r {
+      margin-right: 1rem;
+    }
+
+    &--l {
+      margin-left: 1rem;
+    }
+
+    &--b {
+      margin-bottom: 1rem !important;
+    }
+
+    &--t {
+      margin-top: 1rem !important;
+    }
+  }
+
+  &__pad {
+    &--r {
+      padding-right: 1rem;
+    }
+
+    &--l {
+      padding-left: 1rem;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+
+  &--align-start {
+    align-items: flex-start;
+  }
+
+  &--align-end {
+    align-items: end;
+  }
+
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
+  &--col {
+    flex-direction: column;
+  }
+
+  &--space {
+    justify-content: space-between;
+  }
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--end {
+    justify-content: flex-start;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+}
+
+.content {
+  padding: 0 1rem;
+}
+
+.no-link {
+  text-decoration: none;
+  color: $dark;
+}
+
+.subtitle {
+  font-weight: $fBold;
+  font-size: $fsizeSS;
+  margin-bottom: 1rem;
+}
+
+.pretty input:checked ~ .state.p-primary label:after,
+.pretty.p-toggle .state.p-primary label:after {
+  background-color: #730998 !important;
+}
+
+.__react_component_tooltip {
+  max-width: 210px;
+  word-break: break-all;
+}
+
+.show-when-L {
+  display: none;
+}
+
+.hide-when-L {
+  display: block;
+}
+
+@media screen and (min-width: 700px) {
+  .show-when-L {
+    display: block;
+  }
+
+  .hide-when-L {
+    display: none;
+  }
+
+  .thirty-when-L {
+    width: 33%;
+  }
+
+  .half-when-L {
+    width: 50%;
+  }
+
+  .sixty-when-L {
+    width: 66%;
+  }
+
+  .flex-when-L {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .flex-space {
+    justify-content: space-between;
+  }
+
+  .flex-center {
+    justify-content: center;
+  }
+
+  .flex-align-start {
+    align-items: flex-start;
+  }
+
+  .flex-align-center {
+    align-items: center;
+  }
+
+  .hundred-when-L {
+    width: 100%;
+  }
+
+  .media-center {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    &--s {
+      max-width: 800px;
+    margin: 0 auto;
+    }
+
+    &--xs {
+      max-width: 500px;
+    margin: 0 auto;
+    }
+  }
+
+  .margin-l {
+    margin-left: 1rem;
+  }
+  
+   .margin-r {
+    margin-right: 1rem;
+
+    &--M {
+      margin-right: 3rem;
+    }
+  }
+
+  .page {
+    min-height: 40vh;
+  }
+
+}

@@ -1,0 +1,123 @@
+.book {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    background-color: $white;
+    padding: 2rem!important;
+    width: 100%;
+    overflow-y:scroll;
+    overflow-x:hidden;
+    
+    &__title {
+        font-size: $fsizeL;
+        color: $primary;
+        font-weight: $fBlack;
+    }
+
+    &__header {
+        svg{
+            font-size: 30px;
+            color: $dark;
+        }
+    }
+
+    &__room {
+        background-color: $blue;
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        border: 2px solid $blue;
+
+        &--active {
+            border: 2px solid $primary;
+        }
+    }
+
+    &__room-title {
+        font-size: $fsizeM;
+        font-weight: $fBold;
+        margin-bottom: 1rem;
+    }
+
+    &__room-info {
+        p {
+            font-size: $fsizeXS;
+        }
+    }
+
+    &__caption {
+        margin-bottom: 1rem;
+        margin-top: -0.5rem;
+    }
+
+
+    &__check {
+
+        margin-top: 1rem;
+    }
+}
+
+.booking {
+    background-color: $blue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 4rem;
+
+    &__est {
+        margin-bottom: 1rem;
+        p {
+            font-size: $fsizeM;
+            font-weight: $fSemiBold;
+            margin-left: 0.5rem;
+        }
+
+        svg {
+            font-size: 25px;
+        }
+    }
+
+    &__confirm {
+        svg {
+            font-size: 50px;
+            color: rgb(2, 180, 2);
+        }
+    }
+
+    &__confirm-text {
+        margin-left: 1rem;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .book {
+
+        &--media {
+            display: flex;
+        }
+
+        &__rooms {
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        &__room {
+            width: 350px;
+            margin-right: 1rem;
+        }
+
+        .form {
+            width: 100%;
+        }
+    }
+
+    .booking {
+        &__set-width {
+            min-width: 250px;
+        }
+    }
+
+    
+}

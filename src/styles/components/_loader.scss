@@ -1,0 +1,26 @@
+// Animation tutorial used: https://www.florin-pop.com/blog/2019/03/css-pulse-effect/
+
+.loader {
+    width: 200px;
+    display: block;
+    margin: 25vh auto;
+    animation: pulse-black 1s infinite;
+
+    &--short {
+      margin: 10vh auto;
+  }
+}
+
+@keyframes pulse-black {
+  0% {
+    transform: scale(0.80);
+  }
+  
+  70% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(0.80);
+  }
+}

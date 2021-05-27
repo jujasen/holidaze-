@@ -1,0 +1,12 @@
+.heading {
+    font-weight: $fBlack;
+    color: $primary;
+    font-size: $fsizeL;
+    padding-top: 0.5rem;
+}
+
+@media screen and (min-width: 700px) {
+    .heading {
+        font-size: $fsizeXL;
+    }
+}

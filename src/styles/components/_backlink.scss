@@ -1,0 +1,12 @@
+.backlink {
+    color: $dark;
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+
+    svg {
+        margin-right: 0.5rem;
+    }
+}

@@ -1,0 +1,121 @@
+.header {
+  background-color: $blue;
+  padding: 1rem $padS;
+
+  &__filters {
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+  }
+
+  &__subtitle {
+    font-size: $fsizeSS;
+    font-weight: 600;
+  }
+
+  &__dropdown {
+    min-width: 80px;
+    background-color: $white;
+    border: 2px solid $primary;
+    border-radius: 10px;
+    padding: 0.8rem;
+    cursor: pointer;
+
+    p {
+      padding-right: 1rem;
+    }
+
+    svg {
+      font-size: 20px;
+    }
+  }
+
+  &__select {
+    width: 80px;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      background-color: $white;
+      border-radius: 10px;
+      border: 2px solid $primary;
+    }
+
+    li {
+      padding: 0.2rem 0.5rem;
+      cursor: pointer;
+      &:hover {
+        background-color: rgb(231, 231, 231);
+      }
+
+      &:first-of-type {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+
+      &:last-of-type {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+      }
+    }
+  }
+
+  &__search {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: none;
+    margin-left: 1rem;
+  }
+
+  &__tag {
+    background-color: $blue;
+    padding: 0.5rem 1rem;
+    border: 2px solid $primary;
+    border-radius: 50px;
+
+    &:last-of-type {
+      margin-left: 0.5rem;
+    }
+
+    p {
+      font-size: $fsizeXS;
+      margin-left: 0.5rem;
+      font-weight: $fMedium;
+      color: $primary;
+    }
+
+    &--active {
+      background-color: $primary;
+      color: $blue;
+      border: none;
+
+      p {
+        color: $blue;
+      }
+    }
+
+    &-icon {
+      path {
+        stroke: $primary;
+      }
+
+      &--active {
+        path {
+          stroke: $blue;
+        }
+      }
+    }
+  }
+  &__contact {
+    margin-top: 0.5rem;
+    svg {
+      font-size: 20px;
+    }
+
+    p {
+      margin-left: 1rem;
+    }
+  }
+}

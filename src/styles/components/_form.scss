@@ -1,0 +1,120 @@
+.form {
+  margin: 2rem 0;
+
+  &__fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  &__item {
+    margin-bottom: 1.5rem;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid $primary;
+    margin-bottom: 0.5rem;
+    height: 55px;
+
+    &--area {
+      height: auto;
+    }
+
+  }
+
+  &__label {
+    font-weight: $fSemiBold;
+    margin-bottom: 0.5rem;
+  }
+
+  &__error {
+    color: rgb(173, 2, 2);
+    position: absolute;
+  }
+
+  &__confirm {
+    svg {
+      font-size: 50px;
+      color: rgb(2, 180, 2);
+    }
+  }
+
+  &__confirm-text {
+    margin-left: 1rem;
+  }
+
+  &__card {
+    background-color: $blue;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .react-datepicker {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid $dark;
+  }
+
+  .react-datepicker-ignore-onclickoutside {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 2px solid $primary;
+    margin-bottom: 0.5rem;
+  }
+
+  .react-datepicker__input-container {
+    input {
+      width: 100%;
+      padding: 1rem;
+      box-sizing: border-box;
+      border-radius: 10px;
+      border: 2px solid $primary;
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  .react-wrapper {
+    width: 100%;
+  }
+
+  .react-datepicker-wrapper {
+    display: block;
+  }
+
+  .react-datepicker__header {
+    background-color: $blue;
+    border-bottom: none;
+  }
+
+  .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+    background-color: $dark;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .form {
+    &__item {
+      width: 100%;
+      margin-right: 1rem;
+
+    }
+
+    &__input {
+
+      &--max {
+        max-width: 350px;
+      }
+    }
+
+    .button {
+      width: 150px;
+    }
+  }
+}

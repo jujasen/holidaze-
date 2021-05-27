@@ -1,0 +1,47 @@
+.panel {
+    padding-top: 85px;
+
+    &__section {
+        padding: $padS;
+    }
+
+    &__content {
+        background-color: $blue;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+
+    &__heading {
+        background-color: $dark;
+        padding: 0.5rem 1rem;
+        color: $white;
+        font-weight: $fBold;
+    }
+
+    &__text {
+        padding: 1rem;
+    }
+
+    &__info {
+        margin-bottom: 1rem;
+        font-weight: $fSemiBold;
+        color: $primary;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .panel {
+        &__section {
+            margin: 0 auto;
+            max-width: 1200px;
+            flex-wrap: wrap;
+            min-height: 40vh;
+        }
+
+        &__content {
+            width: 350px;
+            margin: 1rem;
+        }
+    }
+}

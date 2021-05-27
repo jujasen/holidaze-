@@ -1,0 +1,20 @@
+
+
+@media screen and (min-width: 780px) {
+
+  .accmd {
+
+    &__results {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .no-link {
+        width: 360px;
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+

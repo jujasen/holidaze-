@@ -1,0 +1,52 @@
+.estcard {
+    padding: $padS;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+    &__img {
+        width: 150px;
+    }
+
+    &__section {
+        p {
+            font-size: $fsizeXS;
+        }
+    }
+
+    &__stars {
+        margin-top: 1rem;
+    }
+
+    &__rating {
+        font-size: $fsizeXS;
+    }
+
+    &__general {
+        padding-left: 2rem;
+    }
+
+    &__title {
+        font-weight: $fBold;
+        font-size: $fsizeS;
+
+    }
+
+    &__price {
+        color: $primary;
+        font-size: $fsizeM;
+        font-weight: $fBold;
+
+        span {
+            font-size: $fsizeXS;
+        }
+
+        p {
+            font-size: $fsizeXS;
+        }
+    }
+
+}
+
+.estcard__star {
+    font-size: 1.5rem;
+    color: #FFC700;
+}

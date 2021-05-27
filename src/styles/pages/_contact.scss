@@ -1,0 +1,57 @@
+.contact {
+  padding-top: 85px;
+
+  &__content {
+    padding: $padS;
+  }
+
+  &__content-item {
+    margin-bottom: 2rem;
+
+    svg {
+      font-size: 25px;
+    }
+  }
+
+  &__subtitle {
+      font-size: $fsizeL;
+      font-weight: $fSemiBold;
+  }
+
+  .content-item {
+    &__section {
+      &--withicon {
+        margin-left: 1rem;
+        h4 {
+          font-size: $fsizeSS;
+          font-weight: $fSemiBold;
+        }
+
+        p {
+          font-size: $fsizeSS;
+        }
+      }
+      h4 {
+        font-size: $fsizeSS;
+        font-weight: $fSemiBold;
+      }
+    }
+  }
+}
+
+
+@media screen and (min-width: 700px) {
+  .contact {
+    &__content-item {
+      margin-bottom: 1;
+    }
+
+    .form {
+      width: 100%;
+    }
+
+    .form__item {
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.admin-category {
+    padding-top: 85px;
+    
+    &__section {
+        margin: $padS;
+    }
+
+    &__item {
+        background-color: $blue;
+        border-radius: 10px;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: $fsizeSS;
+    }
+
+    &__tag {
+        color: $primary;
+        p {
+            text-transform: uppercase;
+            font-weight: 600;
+            color: $primary;
+        }
+    }
+
+    &__arrow {
+        svg {
+            font-size: 30px;
+            color: rgb(136, 136, 136);
+        } 
+    }   
+}
+
+@media screen and (min-width: 700px) {
+    .admin-category {
+        min-height: 70vh;
+    }
+
+    .admin-category__section {
+        width: 500px;
+    }
+} 

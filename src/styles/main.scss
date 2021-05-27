@@ -1,0 +1,31 @@
+@import './variables';
+@import './base';
+
+
+@import './pages/home';
+@import './pages/accomodation';
+@import './pages/accdetails';
+@import './pages/contact';
+@import './pages/login';
+
+@import './pages/admin/panel';
+@import './pages/admin/category';
+@import './pages/admin/details';
+@import './pages/admin/establishments';
+@import './pages/admin/messages';
+
+@import './components/menu';
+@import './components/searchResult';
+@import './components/footer';
+@import './components/backlink';
+@import './components/heading';
+@import './components/header';
+@import './components/estcard';
+@import './components/loader';
+@import './components/error';
+@import './components/button';
+@import './components/book';
+@import './components/form';
+
+ @import '~pretty-checkbox/src/pretty-checkbox.scss';
+ @import '~react-datepicker/dist/react-datepicker.css';

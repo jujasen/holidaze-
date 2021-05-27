@@ -1,0 +1,44 @@
+.button {
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    background: $gradient;
+    color: $white;
+    border-radius: 50px;
+    border: none;
+    font-weight: $fBold;
+    font-size: $fsizeXS;
+    cursor: pointer;
+
+    &--stroked {
+        border: $primary 2px solid;
+        background: none;
+        color: $primary;
+    }
+
+    &--small {
+        padding: 0.5rem 1rem;
+        text-transform: none;
+    }
+
+    &--simple {
+        background: none;
+        border: none;
+        color: $white;
+        text-decoration: underline;
+        text-decoration-thickness: 3px;
+        font-weight: $fSemiBold;
+        margin-right: 1rem;
+        cursor: pointer;
+
+        &:hover {
+        padding-left: 2rem;
+        font-weight: $fBold;
+        transition: all 0.1s ease-in;
+      }
+    }
+
+    &:hover {
+        background: $gradient-hover;
+        transition: all 0.5s ease-in;
+    }
+}
